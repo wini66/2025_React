@@ -16,6 +16,7 @@
 ![image](https://github.com/user-attachments/assets/e39d3723-c4f2-4cff-8c05-d0c61a3e0ea0)
 #### 자기소개 report 입니다
 ![image](https://github.com/user-attachments/assets/77643e09-8dea-4b5b-9a7a-4e518fc7f69d)
+##### crud.html을 수정하여 파일을 작성하고, HTML skeleton 파일에서 자바스크립트만을 이용해 동일한 페이지를 구현하였습니다. 
 
 
 
