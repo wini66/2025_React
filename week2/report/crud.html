@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        /* 전체 배경색 */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e3f2fd;
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* 프로필 컨테이너 */
+        .profile-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            max-width: 500px;
+            text-align: left;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        /* Profile 제목 */
+        .profile-header {
+            background-color: #E6E6FA;
+            color: white; /* 글자색 흰색 */
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-align: left;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* 프로필 이미지 */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 15px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out 0.3s forwards;
+        }
+
+        /* 이름 & MBTI */
+        .name-mbti {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out 0.5s forwards;
+        }
+
+        /* 문단 스타일 */
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out 0.7s forwards;
+        }
+
+        /* 밑에서 떠오르는 애니메이션 */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">PROFILE</div>
+
+        <!-- 프로필 이미지 -->
+        <img src="/profile.jpg" alt="Profile Picture" class="profile-img">
+
+        <!-- 이름 & MBTI -->
+        <div class="name-mbti">
+            🙂Name: 최민서🙃 <br>
+            🍒Mbti: ENTJ🍒
+        </div>
+
+        <!-- 자기소개 텍스트 -->
+        <p>
+            안녕하세요!<br>
+            저는 경성대 소프트웨어학과를 다니고 있는 4학년 최민서입니다.<br>
+            현재 C++, C# 을 공부하고 있으며<br>
+            게임 개발자로 성장하는 것이 목표입니다.
+        </p>
+
+        <!-- 관심사 추가 -->
+        <p>
+            💡 관심 언어: C++, C# <br>
+            🎵 취미: 요리하기, 게임하기, 그림 그리기 <br>
+            🎯 목표: 다함께 즐길 수 있는 게임 구현하기
+        </p>
+    </div>
+</body>
+</html>
+
