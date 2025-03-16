@@ -8,7 +8,7 @@
 ![image](https://github.com/user-attachments/assets/32292024-0c5f-47cf-84ee-c85d2998a4a3)
 #### 1.2 SPA
 ![image](https://github.com/user-attachments/assets/95bb9d97-8111-4409-98a7-943caf4f8642)
-##### 위에 있는 1주차 파일들은 week1 readme에 정리해뒀습니다.
+##### 위에 있는 1주차 파일들은 week1에 readme에 정리해뒀습니다.
 
 ### 2주차
 #### 2.1 curd.html
