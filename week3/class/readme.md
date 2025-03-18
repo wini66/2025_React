@@ -1,6 +1,7 @@
 ## 3주차
 #### 3.1 clock_123 & binary clock
 ![clock](https://github.com/user-attachments/assets/dab39341-a729-4a82-b4bf-4868ff12f596)
+##### 기존 코드 수정 
 ####
 ![clock2](https://github.com/user-attachments/assets/84d69826-4564-4a5b-a8a7-789b65a48145)
 ####
