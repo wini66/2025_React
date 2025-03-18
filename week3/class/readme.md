@@ -10,3 +10,4 @@
 ![clock3](https://github.com/user-attachments/assets/2a800b6b-1634-4a9a-be39-91dce1aa0ca4)
 #### 3.2 댓글 컴포넌트
 ![image](https://github.com/user-attachments/assets/fcacd629-baf5-43a2-9f51-58bd406311dd)
+##### 주요 파일들 위주로 정리했습니다.
