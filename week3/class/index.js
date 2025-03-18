@@ -1,10 +1,7 @@
-import App from "./App";
+import CommentList from "./chapter_05/CommentList";
 
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-function tick() {
-  root.render(<App />);
-}
-setInterval(tick, 1000); // 1초마다 App을 다시 렌더링
+const root = document.getElementById("root");
+ReactDOM.createRoot(root).render(<CommentList />);
