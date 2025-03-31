@@ -1,0 +1,27 @@
+/* .content-container에 스타일 추가 */
+.content-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 60vh; /* 화면 높이를 설정하여 페이지가 보이도록 */
+}
+
+/* 내비게이션 메뉴 아래 간격 추가 */
+nav {
+  margin-bottom: 20px;
+}
+
+/* 페이지 전환 시 애니메이션 */
+.content-container > * {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+/* fadeIn 애니메이션 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
