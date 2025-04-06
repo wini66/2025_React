@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최민서의 포트폴리오</title>
+    <style>
+        /* 기본 스타일 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        
+        /* 카드 컨테이너 */
+        .card {
+            background-color: white;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        /* 헤더 영역 */
+        .card-header {
+            background: linear-gradient(to right, #a18cd1, #fbc2eb);
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .profile-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #f8f9fa;
+            border: 5px solid white;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+            overflow: hidden;
+        }
+        
+        .name {
+            margin-top: 15px;
+            color: white;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        
+        .mbti {
+            color: white;
+            font-size: 18px;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+        
+        /* 정보 영역 */
+        .card-body {
+            padding: 30px;
+        }
+        
+        .info-section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #a18cd1;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #a18cd1;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .section-content {
+            line-height: 1.7;
+            color: #666;
+            font-size: 16px;
+        }
+        
+        /* 관심사 아이템 */
+        .interest-item {
+            display: inline-block;
+            background-color: #f0f4ff;
+            border-radius: 20px;
+            padding: 8px 15px;
+            margin: 5px;
+            font-size: 14px;
+            color: #5165a5;
+        }
+        
+        /* 애니메이션 */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .card {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        
+        .section-title, .section-content, .interest-item {
+            opacity: 0;
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        
+        .info-section:nth-child(1) .section-title,
+        .info-section:nth-child(1) .section-content {
+            animation-delay: 0.3s;
+        }
+        
+        .info-section:nth-child(2) .section-title,
+        .info-section:nth-child(2) .section-content {
+            animation-delay: 0.6s;
+        }
+        
+        .info-section:nth-child(3) .section-title {
+            animation-delay: 0.9s;
+        }
+        
+        .interest-item:nth-child(1) { animation-delay: 1.0s; }
+        .interest-item:nth-child(2) { animation-delay: 1.1s; }
+        .interest-item:nth-child(3) { animation-delay: 1.2s; }
+        .interest-item:nth-child(4) { animation-delay: 1.3s; }
+        .interest-item:nth-child(5) { animation-delay: 1.4s; }
+        .interest-item:nth-child(6) { animation-delay: 1.5s; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <div class="profile-circle">
+                <img src="/profile.jpg" alt="Profile Picture" class="profile-img">
+            </div>
+            <div class="name">최민서</div>
+            <div class="mbti">👑 ENTJ 👑</div>
+        </div>
+        
+        <div class="card-body">
+            <div class="info-section">
+                <div class="section-title">소개</div>
+                <div class="section-content">
+                    안녕하세요! 저는 경성대 소프트웨어학과 4학년에 재학 중인 최민서입니다. 
+                    현재 게임 개발자가 되기 위해 열심히 공부하고 있습니다.
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <div class="section-title">목표</div>
+                <div class="section-content">
+                    C++과 C#을 깊이 있게 이해하여 모두가 함께 즐길 수 있는 게임을 만드는 것이 
+                    제 목표입니다. 창의적인 게임 디자인과 견고한 프로그래밍을 통해 
+                    플레이어들에게 특별한 경험을 선사하고 싶습니다.
+                </div>
+            </div>
+            
+            <div class="section-title">관심사 & 취미</div>
+            <div>
+                <div class="interest-item">💻 C++</div>
+                <div class="interest-item">💻 C#</div>
+                <div class="interest-item">🎮 게임하기</div>
+                <div class="interest-item">🍳 요리하기</div>
+                <div class="interest-item">🎨 그림 그리기</div>
+                <div class="interest-item">🎯 게임 개발</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
