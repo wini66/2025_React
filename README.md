@@ -49,7 +49,7 @@
 #### 5.2 다른 버전 
 ![image](https://github.com/user-attachments/assets/a341e274-b3a4-47ba-abd5-610d98c40c7f)
 
-## 5주차 수업 내용 정리
+## 5주차 수업내용 정리
 
 | 번호 | 주제 | 주요 내용 | 이모지 |
 |------|------|-----------|--------|
@@ -68,6 +68,30 @@
 #### 6.1 Counter 비교
 ![image](https://github.com/user-attachments/assets/d6414e80-b313-43f2-9f4d-974e85d6d1f1)
 ![image](https://github.com/user-attachments/assets/55862c25-24e0-4976-95d6-6b68884dc87c)
+
+## 6주차 수업내용 정리
+---
+
+# ⚛️ 리액트 훅(Hooks) 
+
+| 항목 | 설명 | 예시/비고 | 이모지 |
+|------|------|------------|--------|
+| **🔹 훅이란?** | 함수형 컴포넌트에서도 상태(state)나 생명주기 기능을 사용할 수 있게 해주는 기능 | 클래스 컴포넌트의 `this.state`, `setState` 없이 사용 가능 | 📝 |
+| **🔸 useState** | 상태값을 관리하는 훅 | `[state, setState] = useState(initialValue)` | 📦 |
+| **🔸 useEffect** | 사이드 이펙트를 처리 (예: API 호출, DOM 조작 등) | `useEffect(() => { ... }, [deps])`<br>- mount/update 구분<br>- cleanup 함수는 unmount 시 실행 | ⚙️ |
+| **🔸 useMemo** | 연산량이 많은 계산의 결과를 메모이제이션 | `useMemo(() => calc(), [deps])`<br>렌더링 중 실행되는 코드만 허용 | 🧮 |
+| **🔸 useCallback** | 함수 자체를 메모이제이션하여 참조 변경 방지 | `useCallback(() => fn(), [deps])`<br>자식 컴포넌트 불필요 렌더 방지 | 🔁 |
+| **🔸 useRef** | DOM 접근 또는 값 저장용으로 활용<br>렌더링과 무관 | `const ref = useRef(null)`<br>`ref.current`로 접근 | 🔍 |
+| **🧾 훅의 규칙** | - 최상위 레벨에서만 호출<br>- 조건문/반복문 내부 호출 ❌<br>- `use`로 시작해야 함 | 리액트 함수 컴포넌트 또는 커스텀 훅 내에서만 사용 | 📏 |
+| **🛠️ 커스텀 훅** | 재사용 가능한 로직을 함수화<br>이름은 반드시 `use`로 시작 | 예: `useCounter()`, `useUserStatus()` 등 | 🧩 |
+| **🧪 실습 예시** | - `useCounter.jsx`: 카운터 훅<br>- `Accommodate.jsx`: 조건에 따른 렌더링<br>- `index.js`: 실행 코드 | `npm start`로 실행 | 🧪 |
+
+---
+
+📌 **기억할 것!**
+- `useEffect`에서 의존성 배열이 없는 경우, **매번 렌더링마다 실행**
+- 의존성 배열이 있는 경우, **배열 내부 값이 변경될 때만 실행**
+- `useMemo`, `useCallback`은 최적화 용도로만! 남발 ❌
 
 
 
