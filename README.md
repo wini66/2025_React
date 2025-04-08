@@ -70,7 +70,7 @@
 #### 6.1 Counter 비교
 ![image](https://github.com/user-attachments/assets/d6414e80-b313-43f2-9f4d-974e85d6d1f1)
 ![image](https://github.com/user-attachments/assets/55862c25-24e0-4976-95d6-6b68884dc87c)
-
+---
 #### 6.2 Area 
 ![image](https://github.com/user-attachments/assets/8728c860-ebe8-40ef-bf54-6e10403b6aaf)
 
