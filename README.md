@@ -94,10 +94,94 @@
 
 ---
 
+
 📌 **기억할 것!**
 - `useEffect`에서 의존성 배열이 없는 경우, **매번 렌더링마다 실행**
 - 의존성 배열이 있는 경우, **배열 내부 값이 변경될 때만 실행**
 - `useMemo`, `useCallback`은 최적화 용도로만! 남발 ❌
+
+
+---
+
+## 🔹 Component State
+
+### ✔️ State란?
+- 컴포넌트 내부에서 관리되는 데이터.
+- 사용자와의 상호작용, 시간 경과, 네트워크 응답 등에 따라 변경됨.
+- 컴포넌트의 동작과 UI에 직접적인 영향을 줌.
+
+### ✔️ State를 사용하는 이유
+- 사용자 입력, 이벤트, API 호출 등에 따라 UI를 동적으로 변경할 수 있음.
+- React에서는 UI = f(state) 형태로 구성됨.
+- State가 바뀌면 React는 자동으로 다시 렌더링하여 UI를 최신 상태로 유지함.
+
+---
+
+## 🔹 Blocking vs Synchronous 
+
+### ✔️ 개념 설명
+
+| 구분             | 설명 |
+|------------------|------|
+| **Blocking**     | 하나의 작업이 끝나기 전까지 다음 작업을 시작하지 못하는 방식. 실행 흐름이 "막히는" 특성이 있음. |
+| **Non-Blocking** | 작업을 요청만 하고, 결과가 준비되면 알림을 받는 방식. 나머지 흐름은 그대로 진행됨. |
+| **Synchronous**  | 요청 → 응답 순서가 보장되는 처리 방식. 응답이 오기 전까지 기다림. |
+| **Asynchronous** | 요청 후 바로 다음 작업을 실행하고, 결과는 나중에 별도로 처리함. 비동기 콜백 또는 Promise/async-await 구조로 주로 구현됨. |
+
+### ✔️ 관계 이해
+- Blocking & Synchronous: 전통적인 동기 호출 방식. 함수 호출 → 응답까지 대기.
+- Non-Blocking & Asynchronous: 현대 웹에서 많이 사용하는 비동기 호출. UI 멈춤 없이 처리 가능.
+
+---
+
+## 🔹 Component 구성과 종류
+
+### ✔️ Class Component
+- ES6 클래스 기반의 컴포넌트.
+- `render()` 메서드 필수.
+- `this.state`와 `this.setState()`를 사용해 상태 관리.
+- 생명주기 메서드 사용 가능 (e.g., `componentDidMount()`)
+
+### ✔️ Function Component
+- 함수로 정의된 컴포넌트.
+- React Hooks(`useState`, `useEffect` 등) 사용으로 상태 관리 가능.
+- 간결하고 가독성이 좋음.
+
+---
+
+## 🔹 Event Handling
+
+### ✔️ 이벤트 핸들링 방식
+- JSX에서는 camelCase로 이벤트 이름을 작성.
+- 예: `onClick`, `onChange`, `onSubmit`
+- 함수 참조를 중괄호 `{}` 안에 작성.
+
+### ✔️ 이벤트 객체 사용
+- 이벤트 핸들러에 `event` 객체가 자동 전달됨.
+- `event.preventDefault()`로 기본 동작 막기 가능.
+
+---
+
+## 🔹 Component Life Cycle (생명주기)
+
+> 클래스형 컴포넌트에서만 사용됨.
+
+| 단계           | 메서드                  | 설명                           |
+|----------------|--------------------------|--------------------------------|
+| Mounting       | `constructor`, `render`, `componentDidMount` | 컴포넌트가 처음 DOM에 삽입될 때 |
+| Updating       | `shouldComponentUpdate`, `componentDidUpdate` | props 또는 state 변경 시        |
+| Unmounting     | `componentWillUnmount`   | 컴포넌트가 DOM에서 제거될 때   |
+
+---
+
+## 🔹 카멜표기법 vs 파스칼표기법
+
+| 표기법       | 예시             | 사용 용도                             |
+|--------------|------------------|----------------------------------------|
+| 카멜 표기법  | `myVariable`     | 변수명, 함수명, 이벤트 핸들러 등       |
+| 파스칼 표기법| `MyComponent`    | 컴포넌트 이름, 클래스 이름 등          |
+
+---
 
 
 
