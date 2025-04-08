@@ -74,7 +74,7 @@
 #### 6.2 Area와 기능 추가
 ![image](https://github.com/user-attachments/assets/8728c860-ebe8-40ef-bf54-6e10403b6aaf)
 ![image](https://github.com/user-attachments/assets/d4beed4d-53ba-428b-81d2-51461148e5c8)
----
+
 ## 6주차 수업내용 정리
 ---
 
