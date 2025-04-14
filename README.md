@@ -76,7 +76,8 @@
 ![image](https://github.com/user-attachments/assets/d4beed4d-53ba-428b-81d2-51461148e5c8)
 ---
 #### 6.3 부산 청년 정책 리포트 
-![image](https://github.com/user-attachments/assets/6c47bc7f-5395-438d-8302-c101cd027ef4)
+![image](https://github.com/user-attachments/assets/ae884628-8d22-4bcc-9027-d4d8cb672adf)
+
 
 
 ## 6주차 수업내용 정리
