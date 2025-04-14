@@ -123,3 +123,72 @@
 
 ---
 
+## 🧩 React Hook이란?
+
+- 함수형 컴포넌트에서 상태 관리와 생명주기 기능을 쓸 수 있게 해주는 기능 (v16.8부터 도입)
+- 클래스형 컴포넌트의 단점을 보완하여 함수형 컴포넌트를 강화
+
+## ⚙️ 대표 Hook들
+
+| 종류 | Hook |
+|------|------|
+| 상태 관리 | `useState`, `useReducer` |
+| 참조 | `useRef`, `useImperativeHandle` |
+| 효과 처리 | `useEffect`, `useLayoutEffect`, `useInsertionEffect` |
+| 성능 최적화 | `useMemo`, `useCallback`, `useTransition`, `useDeferredValue` |
+| 기타 | `useId`, `useDebugValue`, `useSyncExternalStore` |
+| 사용자 정의 | Custom Hook |
+
+## ✅ Hook 사용 규칙
+
+- **최상위**에서만 호출 (조건문, 반복문 ❌)
+- **React 함수 컴포넌트** 또는 **Custom Hook** 안에서만 호출
+
+## 🧠 useState 기본
+
+```js
+const [state, setState] = useState(initialValue)
+```
+
+- 상태 값을 선언하고 수정 가능
+- `setState`는 렌더링을 트리거함
+
+### 예제
+
+```js
+const [count, setCount] = useState(0);
+
+function increment() {
+  setCount(count + 1);
+}
+```
+
+### 이전 상태 기준 업데이트 (💡주의사항)
+
+```js
+setCount(prev => prev + 1); // 안전하게 여러 번 호출 가능
+```
+
+## 📝 객체 & 배열 상태 업데이트
+
+- 기존 객체/배열을 직접 수정 ❌  
+- 항상 **새로운 객체/배열**을 만들어야 함
+
+```js
+setForm({ ...form, name: 'Taylor' });
+setTodos([...todos, newTodo]);
+```
+
+## 🧪 주의사항 (Troubleshooting)
+
+- 상태 변경 후 즉시 값 반영 ❌ → 다음 렌더링에 적용됨
+- `setState(someFunction)` 시 함수 실행됨 → `() => someFunction`으로 감싸야 저장됨
+- Strict Mode에서는 초기화 함수와 updater 함수가 **2번 실행됨**
+
+## 📌 활용 예시
+
+- **Form 관리**, **Checkbox 상태**, **Todo 리스트 관리**, **객체/배열 중첩 업데이트**
+- `useImmer`로 복잡한 상태 관리 간단화 가능
+
+---
+
