@@ -14,6 +14,14 @@
 ![image](https://github.com/user-attachments/assets/46bab71f-978c-4cc4-9d26-e13f5793918b)
 #### 7.7 수용 인원
 ![image](https://github.com/user-attachments/assets/9ee82388-4e01-48f7-af6c-e3c46186c802)
+#### 7.8 usememo 없이 계산
+![image](https://github.com/user-attachments/assets/772b34cf-be63-4e76-8960-bdccb0586819)
+#### 7.9 usememo로 객체 메모이제이션
+![image](https://github.com/user-attachments/assets/f971c273-0cc8-4184-bf94-db062dbc3f00)
+#### 7.10 useCallback
+![image](https://github.com/user-attachments/assets/5554690f-3aa4-4ed4-91c9-0f3378160d66)
+#### 7.11 useref
+![image](https://github.com/user-attachments/assets/a140958c-f11b-4ff3-b1cb-5c9b4adc901a)
 
 
 
