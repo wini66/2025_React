@@ -1029,7 +1029,6 @@ function withLogger(WrappedComponent) {
 const EnhancedComponent = withLogger(MyComponent);
 ```
 
-리액트에서는 "복잡한 컴포넌트를 여러 작은 컴포넌트로 분리하고, 이들을 조합하여 새로운 컴포넌트를 만드는 방식"을 권장합니다.
 
 
 
