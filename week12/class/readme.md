@@ -299,9 +299,5 @@ src/
 - 실제 CRUD 기능 구현
 - 성능 최적화 (React.memo)
 
-- [react-icons 라이브러리](https://react-icons.github.io/react-icons/)
 
----
-**작성자**: 경성대학교 소프트웨어학과  
-**수업**: Web Programming  
-**주차**: 12주차 (React TODO List - 기본 UI 구현)
+
