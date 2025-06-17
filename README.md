@@ -8,6 +8,108 @@
 ![image](https://github.com/user-attachments/assets/95bb9d97-8111-4409-98a7-943caf4f8642)
 ##### 위에 있는 1주차 파일들은 week1에 readme에 정리해뒀습니다.
 
+---
+
+# 📘 1주차 수업 요약 - Web Programming Ⅱ
+
+## 🧱 HTML & CSS 기본
+
+### 🔹 HTML (HyperText Markup Language)
+
+* 웹 페이지의 **구조**를 정의하는 마크업 언어
+* 태그(`<tag>`)로 구성됨
+* `<meta>`, `<h1>`, `<p>`, `<a>`, `<img>` 등 다양한 요소로 구성
+
+### 🔹 마크업 언어 vs 메타데이터
+
+| 구분 | 마크업 언어              | 메타데이터                        |
+| -- | ------------------- | ---------------------------- |
+| 목적 | 문서 구조 및 표현 정의       | 데이터의 속성, 의미 설명               |
+| 형식 | 태그 기반               | 키-값 구조                       |
+| 예시 | HTML, XML, Markdown | HTML `<meta>`, EXIF, JSON-LD |
+
+### 🔹 HTML 표준 관련 사이트
+
+* [W3C 공식 명세](https://www.w3.org/TR/html52/)
+* [MDN HTML 문서](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+* [WHATWG Living Standard](https://html.spec.whatwg.org/multipage/)
+
+---
+
+## 🎨 CSS (Cascading Style Sheets)
+
+* HTML에 **디자인**을 입히는 언어
+* 텍스트, 색상, 레이아웃, 반응형 처리 등 가능
+* `style.css` 파일로 분리하여 사용 가능
+
+---
+
+## ⚡ Emmet
+
+* HTML/CSS 코드 자동완성 도구
+* 예: `ul>li*3` → `<ul><li></li><li></li><li></li></ul>`
+
+---
+
+## 🖥 MPA vs SPA
+
+### 🔸 MPA (Multi Page Application)
+
+* HTML 파일 여러 개로 구성
+* 페이지 전환 시 전체 새로고침
+
+### 🔸 SPA (Single Page Application)
+
+* 하나의 HTML 파일로 구성, JavaScript로 화면 갱신
+* 페이지 전환 시 전체 새로고침 없음
+
+---
+
+## ⚙️ Node.js 소개
+
+* 자바스크립트를 서버에서도 실행 가능하게 해주는 **런타임 환경**
+* JavaScript Runtime (브라우저 밖에서도 실행)
+* 설치 후 명령어:
+
+  ```bash
+  node -v
+  npm -v
+  ```
+
+---
+
+## 🛠 개발 도구
+
+### 🔹 IDE (통합 개발 환경)
+
+* VS Code, IntelliJ, Eclipse 등
+
+### 🔹 VS Code 장점
+
+* 무료, 오픈소스
+* 풍부한 확장 기능
+* 다양한 OS 지원 (Windows, macOS, Linux)
+
+---
+
+## 📌 실습 예시
+
+```html
+<!-- MPA 구조 예시 -->
+<a href="about.html">About</a>
+
+<!-- SPA 구조 예시 -->
+<a href="#" onclick="navigate('about')">About</a>
+```
+
+```css
+/* CSS 예시 */
+nav a {
+  color: blue;
+  text-decoration: none;
+}
+```
+
 ## 2주차
 #### 2.1 curd.html
 ![image](https://github.com/user-attachments/assets/106392e9-fee3-421c-a787-9410c91320e4)
@@ -18,6 +120,147 @@
 #### 2.4 자기소개 report 입니다
 ![image](https://github.com/user-attachments/assets/77643e09-8dea-4b5b-9a7a-4e518fc7f69d)
 ##### crud.html을 수정하여 파일을 작성하고, HTML skeleton 파일에서 자바스크립트만을 이용해 동일한 페이지를 구현하였습니다.
+---
+
+# 📘 2주차 수업 요약 - React 시작과 JSX
+
+## 🚀 리액트 시작하기 (React Setup)
+
+### 🔹 STEP 1: HTML 기반 웹사이트 만들기
+
+* `index.html` 파일로 간단한 정적 웹사이트 구성
+
+### 🔹 STEP 2: CSS 스타일링
+
+* `styles.css` 파일로 외형 꾸미기
+
+### 🔹 STEP 3: React.js 추가
+
+* React CDN을 HTML에 추가
+* 리액트 컴포넌트 작성: `MyButton.js` 등
+
+### 🔹 STEP 4: Create React App (CRA) 사용
+
+```bash
+npx create-react-app my-app
+cd my-app
+npm start
+```
+
+* React 프로젝트 구조가 자동 생성됨
+
+---
+
+## 🧩 JSX 소개
+
+### 🔸 JSX란?
+
+* JavaScript + XML의 결합
+* HTML 같은 문법을 JS 안에서 사용할 수 있는 **문법 확장**
+
+```jsx
+const element = <h1>Hello, JSX!</h1>;
+```
+
+### 🔸 JSX 특징
+
+* JSX는 내부적으로 `React.createElement()`로 변환됨
+* HTML 태그와 JS 코드가 자연스럽게 결합됨
+* `{}`로 JS 표현식 삽입 가능
+
+### 🔸 JSX 장점
+
+1. 코드가 간결해짐
+2. 가독성이 향상됨
+3. XSS 공격에 강함 (Injection Attack 방지)
+
+---
+
+## ⚙️ JSX 사용법
+
+### 🔹 표현식 사용
+
+```jsx
+const name = "React";
+<h1>Hello, {name}!</h1>
+```
+
+### 🔹 속성에 JS 값 사용
+
+```jsx
+<img src={imgUrl} alt="샘플 이미지" />
+<h1 style={{ color: "blue" }}>Hello</h1>
+```
+
+### 🔹 조건부 렌더링
+
+```jsx
+{isAdmin && <p>관리자입니다.</p>}
+<h1>{isLoggedIn ? "Welcome" : "Login"}</h1>
+```
+
+### 🔹 반복 렌더링
+
+```jsx
+{items.map(item => <li key={item.id}>{item.name}</li>)}
+```
+
+### 🔹 이벤트 처리
+
+```jsx
+<button onClick={handleClick}>클릭</button>
+<input onChange={handleChange} />
+```
+
+---
+
+## 🧱 리액트 컴포넌트 예시
+
+### 🔸 `Book.jsx`
+
+```jsx
+function Book(props) {
+  return (
+    <div>
+      <h1>{`이 책의 이름은 ${props.name}입니다.`}</h1>
+    </div>
+  );
+}
+```
+
+### 🔸 `Library.jsx`
+
+```jsx
+function Library() {
+  return (
+    <div>
+      <Book name="처음 만난 리액트" />
+    </div>
+  );
+}
+```
+
+### 🔸 `index.js`
+
+```jsx
+import ReactDOM from 'react-dom/client';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Library />);
+```
+
+---
+
+## 📦 CRA 프로젝트 구조 요약
+
+```
+my-app/
+├── public/        # 정적 HTML, favicon 등
+├── src/           # 실제 리액트 코드
+│   ├── App.js     # 메인 컴포넌트
+│   └── index.js   # 엔트리 포인트
+├── package.json   # 프로젝트 설정
+```
+
 
 ## 3주차
 #### 3.1 clock_123 & binary clock
@@ -33,12 +276,210 @@
 
 ##### 댓글 컴포넌트는 week3에 업로드 해두었습니다.
 
+---
+
+# 📘 3주차 React 수업 요약
+
+## 1. React Element
+
+### ✅ 정의
+
+* React 앱을 구성하는 **가장 작은 단위** (HTML의 요소와 비슷함)
+* 실제 DOM이 아니라 **가상 DOM (Virtual DOM)** 상에서 존재
+* **불변(Immutable)** 객체로 생성 후 변경 불가 → 새로운 엘리먼트로 대체
+
+### ✅ 생성 방법
+
+```jsx
+// JSX 방식
+const element = <h1>Hello, world!</h1>;
+
+// React API 방식
+const element = React.createElement('h1', null, 'Hello, world!');
+```
+
+### ✅ 렌더링
+
+* React 엘리먼트는 **DOM 요소에 마운트(render)** 해야 화면에 표시됨
+
+```js
+ReactDOM.render(element, document.getElementById('root'));
+```
+
+---
+
+## 2. JSX (JavaScript XML)
+
+### ✅ 특징
+
+* JavaScript와 HTML을 **결합한 확장 문법**
+* \*\*React.createElement()\*\*로 자동 변환됨 (Babel 등 사용)
+* **가독성이 좋고**, HTML처럼 작성 가능
+
+### ✅ 주의 사항
+
+* **하나의 부모 요소로 감싸야 함**
+* 자바스크립트 표현식은 `{}` 안에서 사용
+* 스타일은 객체 형태로 작성 (`camelCase` 표기법)
+
+```jsx
+const style = { backgroundColor: 'blue' };
+<div style={style}>Styled text</div>
+```
+
+---
+
+## 3. Element vs Component
+
+| 구분  | React Element | React Component       |
+| --- | ------------- | --------------------- |
+| 정의  | UI의 최소 단위     | 재사용 가능한 UI 블록         |
+| 형태  | 불변 객체         | 함수 or 클래스             |
+| 재사용 | 불가            | 가능                    |
+| 변경  | 새 Element 생성  | 상태(state) 변경으로 자동 렌더링 |
+
+---
+
+## 4. 실습 예시: 시계 만들기
+
+```jsx
+function Clock() {
+  return (
+    <div>
+      <h1>안녕, 리액트!</h1>
+      <h2>현재 시간: {new Date().toLocaleTimeString()}</h2>
+    </div>
+  );
+}
+
+setInterval(() => {
+  ReactDOM.render(<Clock />, document.getElementById('root'));
+}, 1000);
+```
+
+---
+
+## 🔚 정리
+
+* React는 **Element → Component → UI 구성** 방식
+* JSX와 가상 DOM 개념을 활용해 **효율적이고 빠른 UI 업데이트** 가능
+* 실습을 통해 ReactDOM.render() 사용법 및 엘리먼트 구조 이해
+
+
+
 ## 4주차
 #### 4.1 실행결과
 ![화면 캡처 2025-03-26 141925](https://github.com/user-attachments/assets/c2803763-33b5-4599-86a1-ed02c66f5c05)
 
 #### 4.2 부산 소개 웹페이지
 ![image](https://github.com/user-attachments/assets/8b0c0300-4dbb-46b8-b655-aa7799d23544)
+
+---
+
+# 📘 4주차 React 수업 요약
+
+## 1. 🔧 State란?
+
+* **State**는 컴포넌트 내에서 **변화하는 데이터**를 저장하는 객체
+* 값이 변경되면 컴포넌트가 **자동으로 리렌더링**
+* **props**는 부모 → 자식 간 전달만 가능하며, 읽기 전용
+* 반면 **state는 컴포넌트 내부에서 관리되고 수정 가능**
+
+### ✅ 사용 예시 (함수형 컴포넌트)
+
+```jsx
+import React, { useState } from 'react';
+
+function Example() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <button onClick={() => setCount(count + 1)}>
+      클릭 횟수: {count}
+    </button>
+  );
+}
+```
+
+---
+
+## 2. 🔄 생명주기(Lifecycle)란?
+
+* 컴포넌트가 **마운트(Mount)** → **업데이트(Update)** → **언마운트(Unmount)** 되는 과정을 의미
+* 주로 **클래스형 컴포넌트**에서 생명주기 메서드를 사용
+
+### 🧱 주요 생명주기 메서드
+
+| 단계      | 메서드                       | 설명                      |
+| ------- | ------------------------- | ----------------------- |
+| Mount   | `constructor()`           | 컴포넌트 생성                 |
+| Mount   | `componentDidMount()`     | 처음 렌더링 후 실행 (API 호출 등)  |
+| Update  | `shouldComponentUpdate()` | 렌더링 여부 결정               |
+| Update  | `componentDidUpdate()`    | 업데이트 완료 후 실행            |
+| Unmount | `componentWillUnmount()`  | 컴포넌트 제거 전 실행 (타이머 정리 등) |
+
+---
+
+## 3. 🧪 함수형 컴포넌트 생명주기 - `useEffect()`
+
+```jsx
+import React, { useState, useEffect } from 'react';
+
+function Example() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log("Mount됨");
+
+    return () => {
+      console.log("Unmount됨");
+    };
+  }, []);
+
+  useEffect(() => {
+    console.log("count 변경됨: ", count);
+  }, [count]);
+
+  return (
+    <button onClick={() => setCount(count + 1)}>
+      {count}
+    </button>
+  );
+}
+```
+
+---
+
+## 4. 📦 실습 예시: 알림 리스트 만들기
+
+### ✔️ 주요 코드 개요
+
+* 일정 시간마다 알림 메시지를 추가하고 렌더링
+* `setInterval`을 통해 1초마다 상태 업데이트
+* 마운트 시 타이머 시작, 언마운트 시 타이머 제거
+
+```jsx
+componentDidMount() {
+  timer = setInterval(() => {
+    // 알림 추가 로직
+    this.setState({ ... });
+  }, 1000);
+}
+
+componentWillUnmount() {
+  clearInterval(timer);
+}
+```
+
+---
+
+## 🔚 요약
+
+* **State**는 변화하는 데이터를 저장, `setState()` 또는 `useState()`로 수정
+* **Lifecycle**은 컴포넌트의 생애주기 흐름
+* 함수형 컴포넌트에서는 `useEffect()`로 생명주기 대응 가능
+* 실습을 통해 타이머 기반 UI 구성 실습 진행
+
 
 ## 5주차
 #### 5.1 AI 활용 실행결과
