@@ -2,7 +2,6 @@
 ![Image](https://github.com/user-attachments/assets/5399699c-3ed0-42ed-8c4b-934a64fff4ea)
 ## SPA 실행결과
 ![Image](https://github.com/user-attachments/assets/1a72f26b-8d82-4c0b-bdb5-ad31883ef038)
-1주차 수업 내용을 마크다운 형식으로 간단히 정리하면 다음과 같습니다:
 
 ---
 
